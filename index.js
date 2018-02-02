@@ -31,7 +31,7 @@ function viewCart() {
   }
   
   if(cart.length===2){
-    for(var l=2;l>0;l--){
+    for(var l=0;l>0;l--){
     c=cart[l-1]
     k=Object.keys(c)
     if(l>1){
