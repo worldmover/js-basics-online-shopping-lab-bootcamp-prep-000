@@ -44,16 +44,16 @@ function viewCart() {
   }
   
   if(cart.length>2){
-    for(l=cart.length;l>0;l--){
-      c=cart[l-1]
+    for(l=0;l<cart.length;l++){
+      c=cart[l]
       k=Object.keys(c)
-      if(l===cart.length){
+      if(l===0){
         s=s+`, you have ${k} at $${c[k]}`
       }
-      if(l>1 && l!=cart.length){
+      if(l>0 && l!=cart.length){
         s=s+`, ${k} at $${c[k]}`
       }
-      if(l===1){
+      if(l===cart.length){
         s=s+`, and ${k} at $${c[k]}.`
       }
     }
