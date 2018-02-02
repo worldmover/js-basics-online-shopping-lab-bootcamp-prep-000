@@ -90,5 +90,8 @@ function placeOrder(cardNumber) {
     charged to the card ${cardNumber}.`)
     cart.splice(0,cart.length)
   }
-  console.log("Sorry, we don't have a credit card on file for you.")
-}
+  if(cardNumber===undefined){
+    console.log("Sorry, we don't have a credit card on file for you.")
+  }
+  }
+
