@@ -50,10 +50,10 @@ function viewCart() {
       if(l===0){
         s=s+`, you have ${k} at $${c[k]}`
       }
-      if(l>0 && l!=cart.length){
+      if(l>0 && l!=cart.length-1){
         s=s+`, ${k} at $${c[k]}`
       }
-      if(l===cart.length){
+      if(l===cart.length-1){
         s=s+`, and ${k} at $${c[k]}.`
       }
     }
