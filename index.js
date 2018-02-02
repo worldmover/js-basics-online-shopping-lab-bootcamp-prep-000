@@ -31,10 +31,10 @@ function viewCart() {
   }
   
   if(cart.length===2){
-    for(var l=0;l>0;l--){
-    c=cart[l-1]
+    for(var l=0;l<cart.length;l++){
+    c=cart[l]
     k=Object.keys(c)
-    if(l>1){
+    if(l===0){
     s = s + `, you have ${k} at $${c[k]}`
     }
     if(l===1){
