@@ -65,8 +65,8 @@ function total() {
   var sum=0
   for(var i=0;i<cart.length;i++){
     var c=cart[i]
-    var k=Object.keys(c)
-        sum=sum + c[k]
+    var k=Object.keys(c)[0]
+    sum=sum + c[k]
   }
   return sum
 }
@@ -91,6 +91,5 @@ function placeOrder(cardNumber) {
   console.log(`Your total cost is $${total()}, which will be 
     charged to the card ${cardNumber}.`)
     cart = []
-   
    }
 
