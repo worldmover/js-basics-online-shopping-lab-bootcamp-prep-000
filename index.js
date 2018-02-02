@@ -72,11 +72,9 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var x=0
   for(var l=0;l<cart.length;l++){
     if(cart[l].hasOwnProperty(item)===true){
       cart.splice(l,1)
-      x=1
       return cart
     }
   }
